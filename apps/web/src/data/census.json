@@ -1,0 +1,976 @@
+{
+  "_meta": {
+    "source": "http://localhost:8000",
+    "generatedAt": "2026-07-29T04:45:08.554Z"
+  },
+  "districts": [
+    {
+      "district": "Bengaluru Urban",
+      "outlet_count": 60818,
+      "taluk_count": 11,
+      "avg_lat": 12.974695,
+      "avg_lng": 77.590254
+    },
+    {
+      "district": "Mysuru",
+      "outlet_count": 5052,
+      "taluk_count": 13,
+      "avg_lat": 12.318368,
+      "avg_lng": 76.593458
+    },
+    {
+      "district": "Dharwad",
+      "outlet_count": 4327,
+      "taluk_count": 9,
+      "avg_lat": 15.388774,
+      "avg_lng": 75.090665
+    },
+    {
+      "district": "Hassan",
+      "outlet_count": 4065,
+      "taluk_count": 9,
+      "avg_lat": 13.016845,
+      "avg_lng": 76.095047
+    },
+    {
+      "district": "Kalaburagi",
+      "outlet_count": 3453,
+      "taluk_count": 15,
+      "avg_lat": 17.291894,
+      "avg_lng": 76.852851
+    },
+    {
+      "district": "Shivamogga",
+      "outlet_count": 3174,
+      "taluk_count": 9,
+      "avg_lat": 13.974587,
+      "avg_lng": 75.468755
+    },
+    {
+      "district": "Belagavi",
+      "outlet_count": 2704,
+      "taluk_count": 6,
+      "avg_lat": 15.864775,
+      "avg_lng": 74.519124
+    },
+    {
+      "district": "Davanagere",
+      "outlet_count": 2568,
+      "taluk_count": 9,
+      "avg_lat": 14.447015,
+      "avg_lng": 75.906853
+    },
+    {
+      "district": "Tumakuru",
+      "outlet_count": 2330,
+      "taluk_count": 9,
+      "avg_lat": 13.315018,
+      "avg_lng": 77.076461
+    },
+    {
+      "district": "Vijayapura",
+      "outlet_count": 2092,
+      "taluk_count": 2,
+      "avg_lat": 16.824483,
+      "avg_lng": 75.720494
+    },
+    {
+      "district": "Mandya",
+      "outlet_count": 2011,
+      "taluk_count": 7,
+      "avg_lat": 12.525018,
+      "avg_lng": 76.845246
+    },
+    {
+      "district": "Gadag",
+      "outlet_count": 1546,
+      "taluk_count": 10,
+      "avg_lat": 15.470045,
+      "avg_lng": 75.622758
+    },
+    {
+      "district": "Ballari",
+      "outlet_count": 1456,
+      "taluk_count": 6,
+      "avg_lat": 15.151661,
+      "avg_lng": 76.868636
+    },
+    {
+      "district": "Dakshina Kannada",
+      "outlet_count": 1392,
+      "taluk_count": 2,
+      "avg_lat": 12.884609,
+      "avg_lng": 74.850588
+    },
+    {
+      "district": "Koppal",
+      "outlet_count": 1289,
+      "taluk_count": 5,
+      "avg_lat": 15.374506,
+      "avg_lng": 76.272641
+    },
+    {
+      "district": "Haveri",
+      "outlet_count": 1051,
+      "taluk_count": 8,
+      "avg_lat": 14.778883,
+      "avg_lng": 75.449049
+    },
+    {
+      "district": "Bengaluru Rural",
+      "outlet_count": 1004,
+      "taluk_count": 6,
+      "avg_lat": 13.071606,
+      "avg_lng": 77.537578
+    },
+    {
+      "district": "Chitradurga",
+      "outlet_count": 834,
+      "taluk_count": 7,
+      "avg_lat": 14.176141,
+      "avg_lng": 76.406863
+    },
+    {
+      "district": "Ramanagara",
+      "outlet_count": 751,
+      "taluk_count": 3,
+      "avg_lat": 12.694568,
+      "avg_lng": 77.245195
+    },
+    {
+      "district": "Vijayanagara",
+      "outlet_count": 695,
+      "taluk_count": 2,
+      "avg_lat": 15.270326,
+      "avg_lng": 76.385002
+    },
+    {
+      "district": "Chikkamagaluru",
+      "outlet_count": 376,
+      "taluk_count": 4,
+      "avg_lat": 13.309328,
+      "avg_lng": 75.761322
+    },
+    {
+      "district": "Bidar",
+      "outlet_count": 346,
+      "taluk_count": 3,
+      "avg_lat": 17.84853,
+      "avg_lng": 77.32189
+    },
+    {
+      "district": "Uttara Kannada",
+      "outlet_count": 136,
+      "taluk_count": 2,
+      "avg_lat": 14.970553,
+      "avg_lng": 75.037892
+    },
+    {
+      "district": "Chamarajanagar",
+      "outlet_count": 109,
+      "taluk_count": 2,
+      "avg_lat": 11.93915,
+      "avg_lng": 76.924458
+    },
+    {
+      "district": "Kodagu",
+      "outlet_count": 17,
+      "taluk_count": 2,
+      "avg_lat": 12.771785,
+      "avg_lng": 75.911577
+    },
+    {
+      "district": "Unknown District",
+      "outlet_count": 12,
+      "taluk_count": 1,
+      "avg_lat": 13.803605,
+      "avg_lng": 77.285372
+    },
+    {
+      "district": "Yadgir",
+      "outlet_count": 11,
+      "taluk_count": 3,
+      "avg_lat": 16.753311,
+      "avg_lng": 76.836362
+    },
+    {
+      "district": "Kolar",
+      "outlet_count": 2,
+      "taluk_count": 2,
+      "avg_lat": 14.002963,
+      "avg_lng": 77.252058
+    },
+    {
+      "district": "Bagalkot",
+      "outlet_count": 1,
+      "taluk_count": 1,
+      "avg_lat": 15.424823,
+      "avg_lng": 75.638682
+    }
+  ],
+  "segmentation": {
+    "outletType": [
+      {
+        "label": "General Store",
+        "outlet_count": 26400
+      },
+      {
+        "label": "Bakery/ Condiments",
+        "outlet_count": 18735
+      },
+      {
+        "label": "Hotels - QSR/ Darshini/ Canteen",
+        "outlet_count": 15805
+      },
+      {
+        "label": "Pharmacy",
+        "outlet_count": 9398
+      },
+      {
+        "label": "Meat Shop",
+        "outlet_count": 5855
+      },
+      {
+        "label": "Fancy",
+        "outlet_count": 4345
+      },
+      {
+        "label": "Book and Stationary",
+        "outlet_count": 4284
+      },
+      {
+        "label": "Juice Center",
+        "outlet_count": 4194
+      },
+      {
+        "label": "Paan Beeda",
+        "outlet_count": 3758
+      },
+      {
+        "label": "Veg and fruits",
+        "outlet_count": 3306
+      },
+      {
+        "label": "Pooja stores",
+        "outlet_count": 2646
+      },
+      {
+        "label": "Milk parlour",
+        "outlet_count": 2234
+      },
+      {
+        "label": "Supermarket",
+        "outlet_count": 1407
+      },
+      {
+        "label": "Dry Fruits",
+        "outlet_count": 662
+      },
+      {
+        "label": "Organic store/ Ayurvedic Store",
+        "outlet_count": 490
+      },
+      {
+        "label": "Mangalore and Malnad Stores",
+        "outlet_count": 103
+      }
+    ],
+    "channel": [
+      {
+        "label": "Retail",
+        "outlet_count": 87735
+      },
+      {
+        "label": "Horeca",
+        "outlet_count": 9448
+      },
+      {
+        "label": "Wholesale",
+        "outlet_count": 3633
+      },
+      {
+        "label": "Institutional",
+        "outlet_count": 2398
+      },
+      {
+        "label": "MTO",
+        "outlet_count": 408
+      }
+    ],
+    "outletClass": [
+      {
+        "label": "Medium",
+        "outlet_count": 67912
+      },
+      {
+        "label": "Small",
+        "outlet_count": 31542
+      },
+      {
+        "label": "Large",
+        "outlet_count": 4168
+      }
+    ],
+    "ownership": [
+      {
+        "label": "Rented",
+        "outlet_count": 96403
+      },
+      {
+        "label": "Own",
+        "outlet_count": 7038
+      },
+      {
+        "label": "No",
+        "outlet_count": 107
+      },
+      {
+        "label": "Yes",
+        "outlet_count": 74
+      }
+    ]
+  },
+  "infrastructure": {
+    "infrastructure": {
+      "fridge_flag": 23.3,
+      "cooler_flag": 28.2,
+      "deep_freezer_flag": 21,
+      "display_rack_flag": 22.8,
+      "chips_stand_flag": 5.4,
+      "hanger_flag": 67.4,
+      "cash_counter_display_flag": 49.9,
+      "poster_dangler_flag": 35,
+      "promoter_flag": 18,
+      "sampling_area_flag": 51.3,
+      "ac_flag": 2.4,
+      "name_board_flag": 88.6,
+      "cadbury_display_flag": 16
+    },
+    "digital": {
+      "billing_software_flag": 12.2,
+      "digital_payment_flag": 98.4,
+      "card_accepted_flag": 12,
+      "gift_coupon_sodexo_flag": 0.7,
+      "door_delivery_flag": 14.3,
+      "online_sales_flag": 4.7,
+      "company_tieup_flag": 3.4,
+      "b2b_purchase_flag": 16.1
+    }
+  },
+  "categories": [
+    {
+      "category_name": "Atta Flour",
+      "display_order": 2,
+      "availability_pct": 85.4,
+      "avg_sku_count": 2.7
+    },
+    {
+      "category_name": "Dal Pulses",
+      "display_order": 3,
+      "availability_pct": 83.5,
+      "avg_sku_count": 2.4
+    },
+    {
+      "category_name": "Personal Care",
+      "display_order": 15,
+      "availability_pct": 83,
+      "avg_sku_count": 13.7
+    },
+    {
+      "category_name": "Rice",
+      "display_order": 4,
+      "availability_pct": 81,
+      "avg_sku_count": 2.7
+    },
+    {
+      "category_name": "Pooja Category",
+      "display_order": 19,
+      "availability_pct": 79,
+      "avg_sku_count": 7.9
+    },
+    {
+      "category_name": "Snacks",
+      "display_order": 9,
+      "availability_pct": 70.3,
+      "avg_sku_count": 7.3
+    },
+    {
+      "category_name": "Beverages",
+      "display_order": 11,
+      "availability_pct": 70.1,
+      "avg_sku_count": 3.6
+    },
+    {
+      "category_name": "Home Care",
+      "display_order": 16,
+      "availability_pct": 65.3,
+      "avg_sku_count": 9.2
+    },
+    {
+      "category_name": "Masala Mix",
+      "display_order": 8,
+      "availability_pct": 56.8,
+      "avg_sku_count": 4.9
+    },
+    {
+      "category_name": "Branded Staple",
+      "display_order": 1,
+      "availability_pct": 55.6,
+      "avg_sku_count": 9.1
+    },
+    {
+      "category_name": "Milk Products",
+      "display_order": 21,
+      "availability_pct": 54,
+      "avg_sku_count": 2.9
+    },
+    {
+      "category_name": "Health Mix",
+      "display_order": 13,
+      "availability_pct": 52,
+      "avg_sku_count": 1.5
+    },
+    {
+      "category_name": "Papad",
+      "display_order": 6,
+      "availability_pct": 50.7,
+      "avg_sku_count": 1.8
+    },
+    {
+      "category_name": "Vegetables",
+      "display_order": 18,
+      "availability_pct": 50.6,
+      "avg_sku_count": 3.5
+    },
+    {
+      "category_name": "Ready to Cook",
+      "display_order": 20,
+      "availability_pct": 49.9,
+      "avg_sku_count": 2.5
+    },
+    {
+      "category_name": "Egg",
+      "display_order": 12,
+      "availability_pct": 47.8,
+      "avg_sku_count": null
+    },
+    {
+      "category_name": "Stationery",
+      "display_order": 14,
+      "availability_pct": 40.9,
+      "avg_sku_count": 4.7
+    },
+    {
+      "category_name": "Dry Fruits",
+      "display_order": 5,
+      "availability_pct": 40.7,
+      "avg_sku_count": 1.7
+    },
+    {
+      "category_name": "Fruit Juice",
+      "display_order": 7,
+      "availability_pct": 38.6,
+      "avg_sku_count": 1.9
+    },
+    {
+      "category_name": "Spreads & Sauces",
+      "display_order": 10,
+      "availability_pct": 35.7,
+      "avg_sku_count": 5.2
+    },
+    {
+      "category_name": "Frozen Food",
+      "display_order": 17,
+      "availability_pct": 9.5,
+      "avg_sku_count": 1.4
+    },
+    {
+      "category_name": "OTC Products",
+      "display_order": 22,
+      "availability_pct": 5.1,
+      "avg_sku_count": 7.5
+    }
+  ],
+  "brands": {
+    "totalOutlets": 103631,
+    "brands": [
+      {
+        "brand_name": "Ullas Agarabatti",
+        "outlet_count": 21721,
+        "penetration_pct": 21
+      },
+      {
+        "brand_name": "Indira Foods",
+        "outlet_count": 5300,
+        "penetration_pct": 5.1
+      },
+      {
+        "brand_name": "Naturo",
+        "outlet_count": 3085,
+        "penetration_pct": 3
+      },
+      {
+        "brand_name": "Hangyo Ice Cream",
+        "outlet_count": 3040,
+        "penetration_pct": 2.9
+      },
+      {
+        "brand_name": "Nirantara Oil",
+        "outlet_count": 2638,
+        "penetration_pct": 2.5
+      },
+      {
+        "brand_name": "Gusto",
+        "outlet_count": 685,
+        "penetration_pct": 0.7
+      }
+    ],
+    "noTrackedBrandCount": 77545,
+    "noTrackedBrandPct": 74.8
+  },
+  "sales": {
+    "outlets_reporting": 102104,
+    "mean": 258901,
+    "median": 150000,
+    "p25": 100000,
+    "p75": 230000,
+    "total_monthly_sales": 26434821419
+  },
+  "opportunity": [
+    {
+      "district": "Kolar",
+      "outlet_count": 2,
+      "infra_score": 10,
+      "digital_score": 33.3,
+      "category_score": 28.6,
+      "brand_whitespace_pct": 100,
+      "outlets_per_taluk": 1,
+      "infrastructureGap": 79.3,
+      "categoryGap": 100,
+      "digitalGap": 29.6,
+      "brandWhitespaceScore": 100,
+      "densityScore": 0,
+      "opportunityScore": 70.7
+    },
+    {
+      "district": "Bengaluru Urban",
+      "outlet_count": 60818,
+      "infra_score": 14.8,
+      "digital_score": 40.6,
+      "category_score": 44.6,
+      "brand_whitespace_pct": 83.2,
+      "outlets_per_taluk": 5528.9,
+      "infrastructureGap": 67.2,
+      "categoryGap": 67.3,
+      "digitalGap": 14.2,
+      "brandWhitespaceScore": 78.2,
+      "densityScore": 100,
+      "opportunityScore": 62.1
+    },
+    {
+      "district": "Belagavi",
+      "outlet_count": 2704,
+      "infra_score": 15.1,
+      "digital_score": 36.6,
+      "category_score": 38.3,
+      "brand_whitespace_pct": 88.3,
+      "outlets_per_taluk": 450.7,
+      "infrastructureGap": 66.4,
+      "categoryGap": 80.2,
+      "digitalGap": 22.6,
+      "brandWhitespaceScore": 84.8,
+      "densityScore": 8.1,
+      "opportunityScore": 58.9
+    },
+    {
+      "district": "Bagalkot",
+      "outlet_count": 1,
+      "infra_score": 20,
+      "digital_score": 0,
+      "category_score": 68.2,
+      "brand_whitespace_pct": 100,
+      "outlets_per_taluk": 1,
+      "infrastructureGap": 54,
+      "categoryGap": 19.2,
+      "digitalGap": 100,
+      "brandWhitespaceScore": 100,
+      "densityScore": 0,
+      "opportunityScore": 58.3
+    },
+    {
+      "district": "Unknown District",
+      "outlet_count": 12,
+      "infra_score": 3.3,
+      "digital_score": 36.1,
+      "category_score": 51.1,
+      "brand_whitespace_pct": 75,
+      "outlets_per_taluk": 12,
+      "infrastructureGap": 96.2,
+      "categoryGap": 54.1,
+      "digitalGap": 23.7,
+      "brandWhitespaceScore": 67.6,
+      "densityScore": 0.2,
+      "opportunityScore": 55.9
+    },
+    {
+      "district": "Koppal",
+      "outlet_count": 1289,
+      "infra_score": 10.4,
+      "digital_score": 33.4,
+      "category_score": 51,
+      "brand_whitespace_pct": 71.3,
+      "outlets_per_taluk": 257.8,
+      "infrastructureGap": 78.3,
+      "categoryGap": 54.3,
+      "digitalGap": 29.4,
+      "brandWhitespaceScore": 62.8,
+      "densityScore": 4.6,
+      "opportunityScore": 52.1
+    },
+    {
+      "district": "Davanagere",
+      "outlet_count": 2568,
+      "infra_score": 24.1,
+      "digital_score": 34.3,
+      "category_score": 42.8,
+      "brand_whitespace_pct": 83.8,
+      "outlets_per_taluk": 285.3,
+      "infrastructureGap": 43.7,
+      "categoryGap": 71,
+      "digitalGap": 27.5,
+      "brandWhitespaceScore": 79,
+      "densityScore": 5.1,
+      "opportunityScore": 50.5
+    },
+    {
+      "district": "Yadgir",
+      "outlet_count": 11,
+      "infra_score": 1.8,
+      "digital_score": 33.3,
+      "category_score": 66.4,
+      "brand_whitespace_pct": 72.7,
+      "outlets_per_taluk": 3.7,
+      "infrastructureGap": 100,
+      "categoryGap": 22.9,
+      "digitalGap": 29.6,
+      "brandWhitespaceScore": 64.6,
+      "densityScore": 0,
+      "opportunityScore": 49.6
+    },
+    {
+      "district": "Vijayapura",
+      "outlet_count": 2092,
+      "infra_score": 36.1,
+      "digital_score": 33.5,
+      "category_score": 42.3,
+      "brand_whitespace_pct": 92.7,
+      "outlets_per_taluk": 1046,
+      "infrastructureGap": 13.4,
+      "categoryGap": 72,
+      "digitalGap": 29.2,
+      "brandWhitespaceScore": 90.5,
+      "densityScore": 18.9,
+      "opportunityScore": 47.2
+    },
+    {
+      "district": "Vijayanagara",
+      "outlet_count": 695,
+      "infra_score": 11.8,
+      "digital_score": 33.6,
+      "category_score": 58.7,
+      "brand_whitespace_pct": 69.1,
+      "outlets_per_taluk": 347.5,
+      "infrastructureGap": 74.7,
+      "categoryGap": 38.6,
+      "digitalGap": 29,
+      "brandWhitespaceScore": 59.9,
+      "densityScore": 6.3,
+      "opportunityScore": 46.7
+    },
+    {
+      "district": "Haveri",
+      "outlet_count": 1051,
+      "infra_score": 11.5,
+      "digital_score": 33.6,
+      "category_score": 56.8,
+      "brand_whitespace_pct": 65.6,
+      "outlets_per_taluk": 131.4,
+      "infrastructureGap": 75.5,
+      "categoryGap": 42.4,
+      "digitalGap": 29,
+      "brandWhitespaceScore": 55.4,
+      "densityScore": 2.4,
+      "opportunityScore": 46.6
+    },
+    {
+      "district": "Dharwad",
+      "outlet_count": 4327,
+      "infra_score": 20.4,
+      "digital_score": 36,
+      "category_score": 52.6,
+      "brand_whitespace_pct": 72.1,
+      "outlets_per_taluk": 480.8,
+      "infrastructureGap": 53,
+      "categoryGap": 51,
+      "digitalGap": 23.9,
+      "brandWhitespaceScore": 63.8,
+      "densityScore": 8.7,
+      "opportunityScore": 44.4
+    },
+    {
+      "district": "Gadag",
+      "outlet_count": 1546,
+      "infra_score": 13.1,
+      "digital_score": 33.1,
+      "category_score": 60.1,
+      "brand_whitespace_pct": 65.8,
+      "outlets_per_taluk": 154.6,
+      "infrastructureGap": 71.5,
+      "categoryGap": 35.7,
+      "digitalGap": 30,
+      "brandWhitespaceScore": 55.6,
+      "densityScore": 2.8,
+      "opportunityScore": 44.2
+    },
+    {
+      "district": "Uttara Kannada",
+      "outlet_count": 136,
+      "infra_score": 15.7,
+      "digital_score": 34.6,
+      "category_score": 58.1,
+      "brand_whitespace_pct": 64.7,
+      "outlets_per_taluk": 68,
+      "infrastructureGap": 64.9,
+      "categoryGap": 39.8,
+      "digitalGap": 26.8,
+      "brandWhitespaceScore": 54.2,
+      "densityScore": 1.2,
+      "opportunityScore": 42.5
+    },
+    {
+      "district": "Bidar",
+      "outlet_count": 346,
+      "infra_score": 7.7,
+      "digital_score": 33.6,
+      "category_score": 69.3,
+      "brand_whitespace_pct": 64.2,
+      "outlets_per_taluk": 115.3,
+      "infrastructureGap": 85.1,
+      "categoryGap": 16.9,
+      "digitalGap": 29,
+      "brandWhitespaceScore": 53.6,
+      "densityScore": 2.1,
+      "opportunityScore": 42.2
+    },
+    {
+      "district": "Chitradurga",
+      "outlet_count": 834,
+      "infra_score": 14.9,
+      "digital_score": 33.9,
+      "category_score": 57.2,
+      "brand_whitespace_pct": 53.1,
+      "outlets_per_taluk": 119.1,
+      "infrastructureGap": 66.9,
+      "categoryGap": 41.6,
+      "digitalGap": 28.3,
+      "brandWhitespaceScore": 39.2,
+      "densityScore": 2.1,
+      "opportunityScore": 40.8
+    },
+    {
+      "district": "Bengaluru Rural",
+      "outlet_count": 1004,
+      "infra_score": 17.6,
+      "digital_score": 40.2,
+      "category_score": 64.3,
+      "brand_whitespace_pct": 79.5,
+      "outlets_per_taluk": 167.3,
+      "infrastructureGap": 60.1,
+      "categoryGap": 27.1,
+      "digitalGap": 15,
+      "brandWhitespaceScore": 73.4,
+      "densityScore": 3,
+      "opportunityScore": 39.8
+    },
+    {
+      "district": "Tumakuru",
+      "outlet_count": 2330,
+      "infra_score": 24.4,
+      "digital_score": 33.6,
+      "category_score": 52.5,
+      "brand_whitespace_pct": 56.6,
+      "outlets_per_taluk": 258.9,
+      "infrastructureGap": 42.9,
+      "categoryGap": 51.2,
+      "digitalGap": 29,
+      "brandWhitespaceScore": 43.7,
+      "densityScore": 4.7,
+      "opportunityScore": 38.5
+    },
+    {
+      "district": "Ramanagara",
+      "outlet_count": 751,
+      "infra_score": 19.4,
+      "digital_score": 39.9,
+      "category_score": 62.4,
+      "brand_whitespace_pct": 62.6,
+      "outlets_per_taluk": 250.3,
+      "infrastructureGap": 55.6,
+      "categoryGap": 31,
+      "digitalGap": 15.6,
+      "brandWhitespaceScore": 51.5,
+      "densityScore": 4.5,
+      "opportunityScore": 35.5
+    },
+    {
+      "district": "Mandya",
+      "outlet_count": 2011,
+      "infra_score": 30.6,
+      "digital_score": 37.8,
+      "category_score": 56.2,
+      "brand_whitespace_pct": 72,
+      "outlets_per_taluk": 287.3,
+      "infrastructureGap": 27.3,
+      "categoryGap": 43.7,
+      "digitalGap": 20.1,
+      "brandWhitespaceScore": 63.7,
+      "densityScore": 5.2,
+      "opportunityScore": 35
+    },
+    {
+      "district": "Ballari",
+      "outlet_count": 1456,
+      "infra_score": 24.5,
+      "digital_score": 34.1,
+      "category_score": 64.3,
+      "brand_whitespace_pct": 62.2,
+      "outlets_per_taluk": 242.7,
+      "infrastructureGap": 42.7,
+      "categoryGap": 27.1,
+      "digitalGap": 27.9,
+      "brandWhitespaceScore": 51,
+      "densityScore": 4.4,
+      "opportunityScore": 33.7
+    },
+    {
+      "district": "Dakshina Kannada",
+      "outlet_count": 1392,
+      "infra_score": 41.4,
+      "digital_score": 47.3,
+      "category_score": 49,
+      "brand_whitespace_pct": 88.8,
+      "outlets_per_taluk": 696,
+      "infrastructureGap": 0,
+      "categoryGap": 58.4,
+      "digitalGap": 0,
+      "brandWhitespaceScore": 85.5,
+      "densityScore": 12.6,
+      "opportunityScore": 33
+    },
+    {
+      "district": "Chamarajanagar",
+      "outlet_count": 109,
+      "infra_score": 4,
+      "digital_score": 33.9,
+      "category_score": 76.4,
+      "brand_whitespace_pct": 22.9,
+      "outlets_per_taluk": 54.5,
+      "infrastructureGap": 94.4,
+      "categoryGap": 2.4,
+      "digitalGap": 28.3,
+      "brandWhitespaceScore": 0,
+      "densityScore": 1,
+      "opportunityScore": 30
+    },
+    {
+      "district": "Kalaburagi",
+      "outlet_count": 3453,
+      "infra_score": 26.4,
+      "digital_score": 35.9,
+      "category_score": 67.7,
+      "brand_whitespace_pct": 55.9,
+      "outlets_per_taluk": 230.2,
+      "infrastructureGap": 37.9,
+      "categoryGap": 20.2,
+      "digitalGap": 24.1,
+      "brandWhitespaceScore": 42.8,
+      "densityScore": 4.1,
+      "opportunityScore": 28.3
+    },
+    {
+      "district": "Kodagu",
+      "outlet_count": 17,
+      "infra_score": 29.4,
+      "digital_score": 33.3,
+      "category_score": 65.7,
+      "brand_whitespace_pct": 41.2,
+      "outlets_per_taluk": 8.5,
+      "infrastructureGap": 30.3,
+      "categoryGap": 24.3,
+      "digitalGap": 29.6,
+      "brandWhitespaceScore": 23.7,
+      "densityScore": 0.1,
+      "opportunityScore": 24.3
+    },
+    {
+      "district": "Mysuru",
+      "outlet_count": 5052,
+      "infra_score": 31.8,
+      "digital_score": 34.8,
+      "category_score": 68.4,
+      "brand_whitespace_pct": 49.7,
+      "outlets_per_taluk": 388.6,
+      "infrastructureGap": 24.2,
+      "categoryGap": 18.8,
+      "digitalGap": 26.4,
+      "brandWhitespaceScore": 34.8,
+      "densityScore": 7,
+      "opportunityScore": 23.7
+    },
+    {
+      "district": "Chikkamagaluru",
+      "outlet_count": 376,
+      "infra_score": 35.9,
+      "digital_score": 34.7,
+      "category_score": 67.2,
+      "brand_whitespace_pct": 50,
+      "outlets_per_taluk": 94,
+      "infrastructureGap": 13.9,
+      "categoryGap": 21.2,
+      "digitalGap": 26.6,
+      "brandWhitespaceScore": 35.1,
+      "densityScore": 1.7,
+      "opportunityScore": 21.3
+    },
+    {
+      "district": "Hassan",
+      "outlet_count": 4065,
+      "infra_score": 38,
+      "digital_score": 34.3,
+      "category_score": 67.9,
+      "brand_whitespace_pct": 46.3,
+      "outlets_per_taluk": 451.7,
+      "infrastructureGap": 8.6,
+      "categoryGap": 19.8,
+      "digitalGap": 27.5,
+      "brandWhitespaceScore": 30.4,
+      "densityScore": 8.2,
+      "opportunityScore": 19.5
+    },
+    {
+      "district": "Shivamogga",
+      "outlet_count": 3174,
+      "infra_score": 38.3,
+      "digital_score": 34.4,
+      "category_score": 77.6,
+      "brand_whitespace_pct": 23.1,
+      "outlets_per_taluk": 352.7,
+      "infrastructureGap": 7.8,
+      "categoryGap": 0,
+      "digitalGap": 27.3,
+      "brandWhitespaceScore": 0.3,
+      "densityScore": 6.4,
+      "opportunityScore": 8.1
+    }
+  ]
+}

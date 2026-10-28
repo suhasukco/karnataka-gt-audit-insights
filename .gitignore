@@ -1,0 +1,43 @@
+# Environments
+.env
+.venv/
+**/__pycache__/
+*.pyc
+
+# Node (apps/web)
+apps/web/node_modules/
+apps/web/dist/
+
+# Python build artifacts
+*.egg-info/
+database/build/
+etl/build/
+apps/api/build/
+
+# The real outlet export — contains PII, must never be committed
+etl/data/raw/*
+!etl/data/raw/.gitkeep
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Env variants (keep the example)
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Local-only: pre-git manual backups, agent tooling, scratch screenshots
+.backup-*/
+.playwright-mcp/
+.agents/
+.claude/
+skills-lock.json
+/*.png
+
+# Unused 68 MB source video (the site ships the re-encoded availability-is-opportunity.mp4)
+apps/web/public/videos/availabilityisopprtunity.mp4

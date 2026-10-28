@@ -1,0 +1,196 @@
+/* ============================================================================
+   Geography & Outlets — dark plum surface
+   ============================================================================
+
+   Matched to the Cryptocurrency Dashboard reference: a plum-violet ground
+   rather than pure black, elevated cards with a hairline border, generous
+   radius, and thin vivid strokes with no fills.
+
+   The reference's surround (#4B2E9E) and panel (#221830) sit in the same
+   violet family as this platform's own #0B0445, so the brand becomes the
+   deepest step of the scale rather than being replaced by it.
+
+   What is deliberately NOT carried over: the reference is ~80% time-series —
+   line charts, sparklines, 1D/1W/1M, "24h change". This census is a single
+   snapshot with no time axis, so those forms would require inventing data.
+   The visual language transfers; the chart forms do not.
+   ============================================================================ */
+
+.geo {
+  /* --- ground, darkest to raised --- */
+  --g-void: #16101f; /* page ground */
+  --g-panel: #221830; /* card fill */
+  --g-panel-2: #2a1f3d; /* raised / hover card fill */
+  --g-hairline: #38294f; /* 1px card border */
+  --g-brand: #0b0445; /* the platform's indigo — deepest step */
+
+  /* --- accents. Two, used sparingly, as in the reference. --- */
+  --g-cyan: #3dd6e8;
+  --g-magenta: #c13fe8;
+  --g-violet: #8b5cf6; /* CTA / active state */
+  --g-sodium: #ffc978; /* carried from the story layer, for outlet density */
+
+  /* --- ink --- */
+  --g-ink: #f4f1fa;
+  --g-ink-2: #b8aecd;
+  --g-ink-3: #7d7093; /* labels, axis text */
+
+  /* --- semantic (reserved, never reused as a series colour) --- */
+  --g-up: #34d399;
+  --g-down: #fb7185;
+
+  --g-radius: 16px;
+  --g-radius-sm: 10px;
+
+  /* One curve for everything the viewer is not dragging. */
+  --g-ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  background: var(--g-void);
+  color: var(--g-ink);
+}
+
+/* Faint violet bloom, echoing the reference's lit surround. Fixed and
+   non-interactive so it never intercepts a click. */
+.geo-bloom {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(60% 45% at 18% 0%, rgba(139, 92, 246, 0.16), transparent 62%),
+    radial-gradient(50% 40% at 92% 8%, rgba(193, 63, 232, 0.10), transparent 60%);
+}
+
+/* --- card ------------------------------------------------------------------ */
+
+.geo-card {
+  position: relative;
+  background: var(--g-panel);
+  border: 1px solid var(--g-hairline);
+  border-radius: var(--g-radius);
+  box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.75);
+}
+
+.geo-card-hover {
+  transition:
+    transform 0.28s var(--g-ease),
+    border-color 0.28s var(--g-ease),
+    background-color 0.28s var(--g-ease);
+}
+.geo-card-hover:hover {
+  transform: translateY(-3px);
+  background: var(--g-panel-2);
+  border-color: color-mix(in oklab, var(--g-violet) 45%, var(--g-hairline));
+}
+
+/* Selected district. A left rule rather than a fill, so the card's own data
+   stays the brightest thing in it. */
+.geo-card-active {
+  border-color: color-mix(in oklab, var(--g-violet) 70%, var(--g-hairline));
+  background: var(--g-panel-2);
+}
+.geo-card-active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18%;
+  bottom: 18%;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, var(--g-cyan), var(--g-violet));
+}
+
+/* --- type ----------------------------------------------------------------- */
+
+.geo-label {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--g-ink-3);
+}
+
+/* Figures are the hero content: Archivo, expanded, tabular so digits hold
+   their box while a value counts to a new scope. */
+.geo-figure {
+  font-family: 'Archivo', 'Inter', ui-sans-serif, sans-serif;
+  font-variation-settings: 'wdth' 108, 'wght' 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.025em;
+  line-height: 0.9;
+  color: var(--g-ink);
+}
+
+.geo-title {
+  font-family: 'Archivo', 'Inter', ui-sans-serif, sans-serif;
+  font-variation-settings: 'wdth' 102, 'wght' 600;
+  letter-spacing: -0.015em;
+  color: var(--g-ink);
+}
+
+/* --- the reference's signature device: a badge straddling the card edge --- */
+.geo-badge {
+  position: absolute;
+  top: -14px;
+  left: 18px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #14101c;
+  box-shadow: 0 4px 14px -4px rgba(0, 0, 0, 0.8);
+}
+
+/* --- focus, on a dark ground ---------------------------------------------- */
+.geo :focus-visible {
+  outline: 2px solid var(--g-cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Charts get a text equivalent rather than being locked behind hover. */
+.geo-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skeletons hold panel height so a rescope never shifts the layout. */
+.geo-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--g-panel) 0%,
+    var(--g-panel-2) 50%,
+    var(--g-panel) 100%
+  );
+  background-size: 200% 100%;
+  animation: geo-shimmer 1.4s linear infinite;
+  border-radius: var(--g-radius-sm);
+}
+@keyframes geo-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .geo-skeleton {
+    animation: none;
+  }
+  .geo-card-hover {
+    transition: none;
+  }
+  .geo-card-hover:hover {
+    transform: none;
+  }
+}

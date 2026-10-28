@@ -1,0 +1,16 @@
+# Optional — not used while Postgres runs natively on your machine.
+# Kept for teammates/CI who don't have a local Postgres+PostGIS install.
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: karnataka_gt
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

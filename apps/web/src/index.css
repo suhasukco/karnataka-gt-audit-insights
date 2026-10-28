@@ -1,0 +1,204 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap");
+/* Geography & Outlets only. That page is a dark editorial narrative rather than
+   a card grid, and carries its own display/body pair (see styles/geo-narrative.css).
+   Kept out of @theme deliberately — these are not app-wide tokens, and nothing
+   outside `.geo-nar` should reach for them. */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap");
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  /* Statement face. Shares a drafting-table lineage with IBM Plex Mono, so the
+     label and the claim read as one voice. Used on the Insights page only. */
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --text-xs: 0.875rem;
+  --text-sm: 1rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.625rem;
+  --text-3xl: 2rem;
+
+  --color-navy-950: #050f24;
+  --color-navy-900: #071a3d;
+  --color-navy-800: #0d2657;
+  --color-navy-700: #143270;
+
+  /* Accent — anchored on #0B0445.
+     A single hex cannot serve every slot the accent occupies: `accent-900` is
+     the brand colour and carries text and marks on the light surface, while the
+     sidebar needs light tints of the same hue to stay legible on navy. The
+     lighter steps hold the hue (~247°) and shed saturation as they rise, so the
+     family reads as one colour rather than a violet ramp. */
+  --color-accent-50: #eeedf7;
+  --color-accent-100: #dad8ee;
+  --color-accent-200: #b8b3de;
+  --color-accent-300: #8e86c8;
+  --color-accent-400: #6a5faf;
+  --color-accent-500: #4e4193;
+  --color-accent-600: #392d76;
+  --color-accent-700: #281e5b;
+  --color-accent-800: #1a1259;
+  --color-accent-900: #0b0445;
+
+  --color-brand-blue: #1e40af;
+  --color-brand-indigo: #4338ca;
+  --color-brand-teal: #14b8a6;
+  --color-brand-emerald: #10b981;
+  --color-brand-amber: #f59e0b;
+  --color-brand-purple: #7c3aed;
+
+  --color-slate-25: #f9fafb;
+
+  --shadow-card: 0 0 0 1px rgba(15, 23, 42, 0.045), 0 1px 2px rgba(15, 23, 42, 0.03), 0 10px 28px -10px rgba(15, 23, 42, 0.10);
+  --shadow-card-hover: 0 0 0 1px rgba(15, 23, 42, 0.06), 0 4px 10px rgba(15, 23, 42, 0.05), 0 24px 48px -16px rgba(15, 23, 42, 0.18);
+  --shadow-glass: 0 8px 32px rgba(7, 26, 61, 0.24);
+  --shadow-elevated: 0 0 0 1px rgba(15, 23, 42, 0.05), 0 2px 6px rgba(15, 23, 42, 0.04), 0 32px 64px -24px rgba(15, 23, 42, 0.22);
+  --shadow-inset-top: inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+
+  --radius-card: 18px;
+
+  --animate-fade-in: fade-in 0.5s ease-out both;
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+}
+
+@layer base {
+  * {
+    border-color: theme(--color-slate-200);
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* The four live tabs animate on three fronts — the skeleton shimmer, the
+     KPI count-up, and framer-motion's scroll reveals — and none of them
+     carried a reduced-motion escape (Home did, via `useReducedMotion`; the
+     tabs did not). This is the blanket: motion collapses to a near-instant
+     state change, so nothing is *hidden* from a user who asked for less
+     motion, it simply arrives without travel. `!important` is deliberate —
+     it has to beat framer-motion's inline styles. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Proportional digits reflow on every tick of a count-up and refuse to line
+     up in a numeric column. Every figure in this product is either animating
+     or sitting in a table, so tabular is the right default for the mono face
+     and for anything explicitly marked `.nums`. */
+  .nums,
+  [data-nums] {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    background-color: #f4f5f9;
+    /* Second wash was rgba(13,148,136) — teal-600, hardcoded, which kept a
+       green cast on the page ground no class sweep could reach. Now accent. */
+    background-image:
+      radial-gradient(circle at 12% 0%, rgba(78, 65, 147, 0.05), transparent 42%),
+      radial-gradient(circle at 88% 8%, rgba(11, 4, 69, 0.05), transparent 40%);
+    background-attachment: fixed;
+    color: #0f172a;
+    font-feature-settings: "cv11", "ss01";
+    letter-spacing: -0.006em;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(15, 23, 42, 0.15);
+    border-radius: 999px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .bg-grid-glow {
+    /* First stop was rgba(20,184,166) — teal-500. Replaced with accent-400 so
+       the glow stays in the accent hue instead of reintroducing green. */
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(106, 95, 175, 0.18), transparent 40%),
+      radial-gradient(circle at 80% 0%, rgba(124, 58, 237, 0.22), transparent 45%),
+      radial-gradient(circle at 50% 100%, rgba(30, 64, 175, 0.35), transparent 55%);
+  }
+
+  /* The hollow half of the Insights statement: an outlined word with no fill —
+     the unstocked shelf. Solid below `sm`, where a 2px stroke on smaller type
+     closes the counters and stops being readable, and solid again wherever
+     text-stroke is unsupported. Legibility never depends on the effect. */
+  .type-hollow {
+    /* The stroke width lives in a custom property so the drain tween can read
+       it without reading `-webkit-text-stroke-width` — which the tween itself
+       writes inline, so re-reading that would return the animation's own start
+       value instead of the stylesheet's. GSAP never writes this property. */
+    --hollow-stroke: 2px;
+    color: transparent;
+    -webkit-text-stroke: var(--hollow-stroke) var(--color-accent-900);
+  }
+
+  @supports not ((-webkit-text-stroke: 1px black)) {
+    .type-hollow {
+      color: var(--color-accent-900);
+    }
+  }
+
+  /* Solid below `sm`. A 1px stroke at the ~44px clamp floor picks up subpixel
+     colour fringing and reads muddy — measurably worse than no effect at all.
+     The inversion is a large-canvas move; on a phone the claim carries itself. */
+  @media (max-width: 640px) {
+    .type-hollow {
+      --hollow-stroke: 0px;
+      color: var(--color-accent-900);
+      -webkit-text-stroke: 0;
+    }
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  }
+}

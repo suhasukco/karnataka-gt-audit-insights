@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "state": "Karnataka",
+    "source": "Door-to-door General Trade census, 2026",
+    "note": "Only figures stated in the brief are populated. Per-category penetration beyond Frozen Food, and per-district shares beyond Bengaluru, are null until the full census dataset is baked in during a later pass."
+  },
+  "headline": {
+    "outlets": 103599,
+    "state": "Karnataka",
+    "label": "Retail outlets. Mapped. Verified. Analyzed."
+  },
+  "concentration": {
+    "topDistrict": "Bengaluru",
+    "topDistrictShare": 0.59,
+    "insight": "Extreme concentration — nearly three in five GT outlets sit in a single district."
+  },
+  "districts": [
+    { "name": "Bengaluru", "outletShare": 0.59, "tier": 1, "lat": 12.9716, "lng": 77.5946 }
+  ],
+  "categories": [
+    { "name": "Staples", "penetration": null, "whitespace": null, "isOpportunity": false, "note": "Rice ~85% penetration — a near-saturated staple." },
+    { "name": "Personal Care", "penetration": null, "whitespace": null, "isOpportunity": false, "note": "Deepest category by assortment." },
+    { "name": "Beverages", "penetration": null, "whitespace": null, "isOpportunity": false },
+    { "name": "Home Care", "penetration": null, "whitespace": null, "isOpportunity": false },
+    { "name": "OTC", "penetration": null, "whitespace": null, "isOpportunity": true, "note": "One of the two major whitespace opportunities." },
+    { "name": "Frozen Food", "penetration": 0.09, "whitespace": 0.91, "isOpportunity": true, "note": "Hero opening — ~90% white space." }
+  ],
+  "staples": {
+    "rice": { "penetration": 0.85 }
+  },
+  "recommendations": [
+    {
+      "title": "Win Bengaluru first, then radiate",
+      "body": "With ~59% of GT outlets in one district, a Karnataka entry is really a Bengaluru entry. Concentrate distribution muscle where the density already is, then step out to Tier-2/3 towns from that base."
+    },
+    {
+      "title": "Lead with Frozen Food and OTC",
+      "body": "Frozen Food sits near ~90% white space and OTC is the other major gap. These are the categories where a new entrant meets the least incumbency and the most room to define the shelf."
+    },
+    {
+      "title": "Buy depth, not just doors, in Tier-3",
+      "body": "Tier-3 towns carry deeper assortment opportunity than their outlet counts suggest. Reward each outlet with a wider, better-merchandised range rather than chasing raw store count alone."
+    }
+  ]
+}
